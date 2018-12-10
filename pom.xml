@@ -9,6 +9,16 @@
 
   <name>Simple Maven example</name>
   <url>https://jitpack.io/#jitpack/maven-simple/0.1</url>
+  <distributionManagement>
+  <snapshotRepository>
+    <id>samplesnap</id>
+    <url>http://localhost:8080/nexus-2.14.11-01/content/repositories/samplesnap</url>
+  </snapshotRepository>
+    <repository>
+    <id>samplerel</id>
+    <url>http://localhost:8080/nexus-2.14.11-01/content/repositories/samplerel</url>
+  </repository>
+</distributionManagement>
 
   <dependencies>
     <dependency>
