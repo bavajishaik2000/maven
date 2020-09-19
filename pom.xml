@@ -34,9 +34,16 @@
 	            <groupId>org.codehaus.mojo</groupId>
 	            <artifactId>cobertura-maven-plugin</artifactId>
 	            <version>2.7</version>
-	        </plugin>
+	        
+		<configuration>
+		   <formats>
+			   <format>xml</format>
+			   <format>html</format>
+		    </formats>
+		</configuration>
+		</plugin>
 	    </plugins>
-	</reporting>
+</reporting>
   <build>
     <plugins>
     
@@ -49,6 +56,20 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+	     
+	        <plugin>
+	            <groupId>org.codehaus.mojo</groupId>
+	            <artifactId>cobertura-maven-plugin</artifactId>
+	            <version>2.7</version>
+	        
+		<configuration>
+		   <formats>
+			   <format>xml</format>
+			   <format>html</format>
+		    </formats>
+		</configuration>
+		</plugin>
+	   
       
       
       <plugin>  <!-- Create sources.jar -->
